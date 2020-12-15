@@ -1,0 +1,24 @@
+
+[
+    {
+      "id": 1,
+      "image": "/assets/dina.jpg",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "/assets/titan1.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "/assets/titan2.jpg",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "/assets/eren.jpg",
+      "clicked": false
+    }
+  ]
+  
