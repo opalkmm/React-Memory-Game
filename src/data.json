@@ -2,23 +2,61 @@
 [
     {
       "id": 1,
+      "name":"Dina",
       "image": "/assets/dina.jpg",
       "clicked": false
     },
     {
       "id": 2,
+      "name":"Titan1",
       "image": "/assets/titan1.jpg",
       "clicked": false
     },
     {
       "id": 3,
+      "name":"Titan2",
       "image": "/assets/titan2.jpg",
       "clicked": false
     },
     {
       "id": 4,
+      "name":"Eren",
       "image": "/assets/eren.jpg",
       "clicked": false
+    },
+    {
+      "id": 5,
+      "name":"Annie",
+      "image": "/assets/annie.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "name":"Reiner",
+      "image": "/assets/reiner.jpg",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "name":"Titan3",
+      "image": "/assets/titan3.jpg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "name":"Ymir",
+      "image": "/assets/ymir.jpg",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "name":"Ms Springer",
+      "image": "/assets/ms_springer.jpg",
+      "clicked": false
     }
+  
+  
+  
+  
   ]
   
