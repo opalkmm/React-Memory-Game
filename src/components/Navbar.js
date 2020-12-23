@@ -6,7 +6,13 @@ const navBar = () => {
     <>
       <ReactBootstrap.Navbar bg="dark" variant="dark">
         <ReactBootstrap.Navbar.Brand>
-          Pick the tians that are not previously clicked
+          <img
+            src="https://media.giphy.com/media/twXzhpNhyizWU/giphy.gif"
+            alt="magical-girl-icon"
+            height="30px"
+            width="30px"
+          ></img>
+          <span> memory game </span>
         </ReactBootstrap.Navbar.Brand>
       </ReactBootstrap.Navbar>
     </>

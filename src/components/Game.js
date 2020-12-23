@@ -3,37 +3,78 @@ import React, { Component } from "react";
 import Card from "./Card";
 import "./Game.css";
 import Navbar from "./Navbar";
-// import Score from "./Score";
+import Score from "./Score";
 import data from "../data.json";
+
 class Game extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data,
-      count: 1,
-      message: ""
+      ids: [],
+      count: 0,
+      message: "pick a titan!"
     };
     this.handleClick = this.handleClick.bind(this);
   }
   //function when click, increase score
   handleClick = (event) => {
     const id = event.target.id;
-    this.setState((prev) => ({ count: prev.count + 1 }));
+    this.shuffle(data);
+    if (id !== "" && this.state.ids.indexOf(id) === -1) {
+      this.state.ids.push(id);
 
-    console.log(this.state.count);
-    console.log(id);
+      this.setState((prev) => ({
+        count: prev.count + 1,
+        message: "pick one, you hack!"
+      }));
+      if (this.state.count === 11) {
+        this.setState({ message: "You Win!" });
+      }
+    } else {
+      // console.log("no nothing");
+      this.setState({
+        message: "You lose, try again!",
+        count: 0,
+        ids: []
+      });
+    }
+  };
+
+  //function to shuffle the card after being chosen
+  shuffle = (array) => {
+    var currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
   };
 
   render() {
-    // console.log(this.state.data);
     return (
       <div>
         <Navbar />
-        {/* <Score /> */}
-        <h1 style={{ textAlign: "center" }}>Score: {this.state.count}</h1>
+        <Score message={this.state.message} />
+        <h3 style={{ textAlign: "center" }}>Score: {this.state.count}</h3>
 
         <div className="container">
-          <button onClick={this.handleClick}>
+          <button
+            style={{ outline: "none" }}
+            className="child"
+            onClick={this.handleClick}
+          >
             {this.state.data.map((item) => (
               <Card
                 key={item.id}

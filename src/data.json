@@ -3,56 +3,62 @@
     {
       "id": 1,
       "name":"Dina",
-      "image": "/assets/dina.jpg",
-      "clicked": false
+      "image": "/assets/dina.jpg"
     },
     {
       "id": 2,
       "name":"Titan1",
-      "image": "/assets/titan1.jpg",
-      "clicked": false
+      "image": "/assets/titan1.jpg"
     },
     {
       "id": 3,
       "name":"Titan2",
-      "image": "/assets/titan2.jpg",
-      "clicked": false
+      "image": "/assets/titan2.jpg"
     },
     {
       "id": 4,
       "name":"Eren",
-      "image": "/assets/eren.jpg",
-      "clicked": false
+      "image": "/assets/eren.jpg"
     },
     {
       "id": 5,
       "name":"Annie",
-      "image": "/assets/annie.jpg",
-      "clicked": false
+      "image": "/assets/annie.jpg"
     },
     {
       "id": 6,
       "name":"Reiner",
-      "image": "/assets/reiner.jpg",
-      "clicked": false
+      "image": "/assets/reiner.jpg"
     },
     {
       "id": 7,
       "name":"Titan3",
-      "image": "/assets/titan3.jpg",
-      "clicked": false
+      "image": "/assets/titan3.jpg"
     },
     {
       "id": 8,
       "name":"Ymir",
-      "image": "/assets/ymir.jpg",
-      "clicked": false
+      "image": "/assets/ymir.jpg"
     },
     {
       "id": 9,
       "name":"Ms Springer",
-      "image": "/assets/ms_springer.jpg",
-      "clicked": false
+      "image": "/assets/ms_springer.jpg"
+    },
+    {
+      "id": 10,
+      "name":"Beast",
+      "image": "/assets/beast.jpg"
+    },
+    {
+      "id": 11,
+      "name":"Cart",
+      "image": "/assets/cart.jpg"
+    },
+    {
+      "id": 12,
+      "name":"Colossal",
+      "image": "/assets/colossal.jpg"
     }
   
   

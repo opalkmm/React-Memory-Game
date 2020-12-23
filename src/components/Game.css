@@ -1,17 +1,24 @@
 body {
-  background-color: orange;
+  background-color: whitesmoke !important;
 }
 
 .container {
-  width: 900px;
-  height: 700px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 500px;
+  height: 500px;
 
+  /* flex-basis: 33%; */
   /* display: flex; */
 }
 
-button {
+.child {
   display: flex;
   flex-wrap: wrap;
+  /* flex-basis: 33%; */
   align-items: center;
+  border: none;
+  background-color: whitesmoke;
+  /* width: 33%; */
   justify-content: space-around;
 }
