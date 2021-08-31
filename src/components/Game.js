@@ -13,7 +13,7 @@ class Game extends Component {
       data,
       ids: [],
       count: 0,
-      message: "pick a titan!"
+      message: "Pick a Titan!"
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -26,7 +26,7 @@ class Game extends Component {
 
       this.setState((prev) => ({
         count: prev.count + 1,
-        message: "pick one, you hack!"
+        message: "Pick an unpicked card"
       }));
       if (this.state.count === 11) {
         this.setState({ message: "You Win!" });
